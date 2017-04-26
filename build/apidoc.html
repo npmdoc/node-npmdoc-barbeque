@@ -90,6 +90,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index">
+            function <span class="apidocSignatureSpan">barbeque.</span>index
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.barbeque.socketio">
             function <span class="apidocSignatureSpan">barbeque.</span>socketio
             <span class="apidocSignatureSpan">(app, io)</span>
@@ -111,15 +120,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.barbeque.task">
             function <span class="apidocSignatureSpan">barbeque.</span>task
             <span class="apidocSignatureSpan">(bbq, type, data)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.barbeque.toString">
-            function <span class="apidocSignatureSpan">barbeque.</span>toString
-            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -148,6 +148,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">barbeque.</span>helper</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">barbeque.</span>index.prototype</span>
 
         </li>
 
@@ -374,6 +380,113 @@
             <a class="apidocElementLiA" href="#apidoc.element.barbeque.helper.genId">
             function <span class="apidocSignatureSpan">barbeque.helper.</span>genId
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.barbeque.index">module barbeque.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.index">
+            function <span class="apidocSignatureSpan">barbeque.</span>index
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.super_">
+            function <span class="apidocSignatureSpan">barbeque.index.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.barbeque.index.prototype">module barbeque.index.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.admin">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>admin
+            <span class="apidocSignatureSpan">(options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.create">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>create
+            <span class="apidocSignatureSpan">(type, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.listen">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>listen
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.process">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>process
+            <span class="apidocSignatureSpan">(type, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.processAll">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>processAll
+            <span class="apidocSignatureSpan">(nestableObject)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.query">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>query
+            <span class="apidocSignatureSpan">(query, cb, queryDetail)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.queryDetail">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>queryDetail
+            <span class="apidocSignatureSpan">(query, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.run">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>run
+            <span class="apidocSignatureSpan">(fn, data, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.barbeque.index.prototype.update">
+            function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>update
+            <span class="apidocSignatureSpan">(taskId, task, cb)</span>
             </a>
 
         </li>
@@ -726,6 +839,50 @@
 
 
     <h2>
+        <a href="#apidoc.element.barbeque.index" id="apidoc.element.barbeque.index">
+        function <span class="apidocSignatureSpan">barbeque.</span>index
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Barbeque(config) {
+  assert(_.isPlainObject(config) || _.isUndefined(config),
+         &#x27;&#x22;config&#x22; must be a plain object or undefined.&#x27;);
+
+  if (_.isUndefined(config)) { config = {}; }
+
+  assert((_.isString(config.host) &#x26;&#x26; !_.isEmpty(config.host)) || _.isUndefined(config.host),
+         &#x27;&#x22;config.host&#x22; must be a non-empty string or undefined.&#x27;);
+  assert((_.isNumber(config.port) &#x26;&#x26; (parseInt(config.port, 10) === config.port)) || _.isUndefined(config.port),
+         &#x27;&#x22;config.port&#x22; must be an integer or undefined.&#x27;);
+  assert((_.isString(config.password) &#x26;&#x26; !_.isEmpty(config.password)) || _.isNull(config.password) || _.isUndefined(config.password
+),
+         &#x27;&#x22;config.password&#x22; must be a non-empty string or null/undefined.&#x27;);
+  assert((_.isString(config.namespace) &#x26;&#x26; !_.isEmpty(config.namespace)) || _.isNull(config.namespace) || _.isUndefined(config.namespace
+),
+         &#x27;&#x22;config.namespace&#x22; must be a non-empty string or null/undefined.&#x27;);
+  assert((_.isString(config.prefix) &#x26;&#x26; !_.isEmpty(config.prefix)) || _.isUndefined(config.prefix),
+         &#x27;&#x22;config.prefix&#x22; must be a non-empty string or undefined.&#x27;);
+
+  if (_.isEmpty(config)) { config = {}; }
+  if (_.isEmpty(config.host)) { config.host = C.DEFAULT_HOST; }
+  if (_.isUndefined(config.port)) { config.port = C.DEFAULT_PORT; }
+  if (_.isEmpty(config.password)) { config.password = C.DEFAULT_PASSWORD; }
+  if (_.isEmpty(config.namespace)) { config.namespace = C.DEFAULT_NAMESPACE; }
+  if (_.isEmpty(config.prefix)) { config.prefix = C.DEFAULT_PREFIX; }
+
+  this._config = config;
+  this._builder = new (require(&#x27;./builder&#x27;))(config.namespace, config.prefix);
+  this._worker = new (require(&#x27;./worker&#x27;))(this);
+
+  this.on(&#x27;error&#x27;, function () {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.barbeque.socketio" id="apidoc.element.barbeque.socketio">
         function <span class="apidocSignatureSpan">barbeque.</span>socketio
         <span class="apidocSignatureSpan">(app, io)</span>
@@ -786,21 +943,6 @@
 
 
     <h2>
-        <a href="#apidoc.element.barbeque.toString" id="apidoc.element.barbeque.toString">
-        function <span class="apidocSignatureSpan">barbeque.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.barbeque.worker" id="apidoc.element.barbeque.worker">
         function <span class="apidocSignatureSpan">barbeque.</span>worker
         <span class="apidocSignatureSpan">(bbq)</span>
@@ -820,6 +962,8 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -1532,7 +1676,23 @@ client.SUBSCRIBE(builder.stateChangeChannel(), function (err) {
     return result;
   }, {});
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return this;
+};
+
+Barbeque.prototype.processAll = function (nestableObject) {
+  assert(_.isObject(nestableObject), &#x27;&#x22;nestableObject&#x22; must be an object type.&#x27;);
+
+  var self = this,
+  flattenObject = require(&#x27;./helper&#x27;).<span class="apidocCodeKeywordSpan">flattenDot</span>(nestableObject),
+  n = _.size(flattenObject);
+
+  _.each(_.keys(flattenObject), function (type, i) {
+var fn = flattenObject[type],
+    skipProcess = (i + 1 &#x3c; n);
+
+assert(_.isString(type) &#x26;&#x26; !_.isEmpty(type), &#x27;&#x22;type&#x22; must be a non-empty string.&#x27;);
+...</pre></li>
     </ul>
 
 
@@ -1563,6 +1723,433 @@ Builder.prototype.workerName = function (workerId) {
 
   return util.format(&#x27;%s:worker:pub:%s&#x27;, this._prefix, workerId);
 };
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.barbeque.index" id="apidoc.module.barbeque.index">module barbeque.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.index" id="apidoc.element.barbeque.index.index">
+        function <span class="apidocSignatureSpan">barbeque.</span>index
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Barbeque(config) {
+  assert(_.isPlainObject(config) || _.isUndefined(config),
+         &#x27;&#x22;config&#x22; must be a plain object or undefined.&#x27;);
+
+  if (_.isUndefined(config)) { config = {}; }
+
+  assert((_.isString(config.host) &#x26;&#x26; !_.isEmpty(config.host)) || _.isUndefined(config.host),
+         &#x27;&#x22;config.host&#x22; must be a non-empty string or undefined.&#x27;);
+  assert((_.isNumber(config.port) &#x26;&#x26; (parseInt(config.port, 10) === config.port)) || _.isUndefined(config.port),
+         &#x27;&#x22;config.port&#x22; must be an integer or undefined.&#x27;);
+  assert((_.isString(config.password) &#x26;&#x26; !_.isEmpty(config.password)) || _.isNull(config.password) || _.isUndefined(config.password
+),
+         &#x27;&#x22;config.password&#x22; must be a non-empty string or null/undefined.&#x27;);
+  assert((_.isString(config.namespace) &#x26;&#x26; !_.isEmpty(config.namespace)) || _.isNull(config.namespace) || _.isUndefined(config.namespace
+),
+         &#x27;&#x22;config.namespace&#x22; must be a non-empty string or null/undefined.&#x27;);
+  assert((_.isString(config.prefix) &#x26;&#x26; !_.isEmpty(config.prefix)) || _.isUndefined(config.prefix),
+         &#x27;&#x22;config.prefix&#x22; must be a non-empty string or undefined.&#x27;);
+
+  if (_.isEmpty(config)) { config = {}; }
+  if (_.isEmpty(config.host)) { config.host = C.DEFAULT_HOST; }
+  if (_.isUndefined(config.port)) { config.port = C.DEFAULT_PORT; }
+  if (_.isEmpty(config.password)) { config.password = C.DEFAULT_PASSWORD; }
+  if (_.isEmpty(config.namespace)) { config.namespace = C.DEFAULT_NAMESPACE; }
+  if (_.isEmpty(config.prefix)) { config.prefix = C.DEFAULT_PREFIX; }
+
+  this._config = config;
+  this._builder = new (require(&#x27;./builder&#x27;))(config.namespace, config.prefix);
+  this._worker = new (require(&#x27;./worker&#x27;))(this);
+
+  this.on(&#x27;error&#x27;, function () {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.super_" id="apidoc.element.barbeque.index.super_">
+        function <span class="apidocSignatureSpan">barbeque.index.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.barbeque.index.prototype" id="apidoc.module.barbeque.index.prototype">module barbeque.index.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.admin" id="apidoc.element.barbeque.index.prototype.admin">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>admin
+        <span class="apidocSignatureSpan">(options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">admin = function (options, cb) {
+  assert(_.isObject(options) || _.isUndefined(options), &#x27;&#x22;options&#x22; must be an object or undefined.&#x27;);
+  assert(_.isFunction(cb) || _.isUndefined(cb), &#x27;&#x22;cb&#x22; must be a function or undefined.&#x27;)
+
+  return new (require(&#x27;../admin&#x27;))(options, cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Admin UI
+
+```js
+var Barbeque = require(&#x27;barbeque&#x27;),
+    bbq = new Barbeque();
+
+bbq.<span class="apidocCodeKeywordSpan">admin</span>();
+```
+
+
+* [See more comprehensive examples here.](https://github.com/pilwon/barbeque/tree/master/examples)
+
+
+## API
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.create" id="apidoc.element.barbeque.index.prototype.create">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>create
+        <span class="apidocSignatureSpan">(type, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (type, data) {
+  assert(_.isString(type) &#x26;&#x26; !_.isEmpty(type), &#x27;&#x22;type&#x22; must be a non-empty string.&#x27;);
+
+  return new (require(&#x27;./task&#x27;))(this, type, data);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Task
+
+```js
+var Barbeque = require(&#x27;barbeque&#x27;),
+    bbq = new Barbeque(config);
+
+bbq.<span class="apidocCodeKeywordSpan">create</span>(&#x27;add&#x27;, {
+  x: 2,
+  y: 3
+}).save();
+
+//--&#x3e; New task saved to Redis DB and notified workers.
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.listen" id="apidoc.element.barbeque.index.prototype.listen">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>listen
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listen = function () {
+  if (!this._worker) {
+    this._worker = new (require(&#x27;./worker&#x27;))(this);
+  }
+
+  this._worker.listen();
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+## API
+
+```js
+.admin()                   // start admin UI
+.create(type, data)        // create an instance of Task
+.<span class="apidocCodeKeywordSpan">listen</span>()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.processAll(obj)           // obj: {key:type,val:data} and nestable
+.query(query, cb)          // query: string id, array of string ids, or filter object
+.queryDetail(query, cb)    // query: string id, array of string ids, or filter object
+.run(processFn, data, cb)  // immediately run a task
+.update(taskId, task, cb)  // update task
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.process" id="apidoc.element.barbeque.index.prototype.process">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>process
+        <span class="apidocSignatureSpan">(type, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (type, fn) {
+  assert(_.isString(type) &#x26;&#x26; !_.isEmpty(type), &#x27;&#x22;type&#x22; must be a non-empty string.&#x27;);
+  assert(_.isFunction(fn), &#x27;&#x22;fn&#x22; must be a function.&#x27;);
+
+  this._worker.watch(type, fn);
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Worker
+
+```js
+var Barbeque = require(&#x27;barbeque&#x27;),
+    bbq = new Barbeque(config);
+
+bbq.<span class="apidocCodeKeywordSpan">process</span>(&#x27;add&#x27;, function (task, done) {
+  done(null, task.data.x + task.data.y);
+});
+
+//--&#x3e; New worker created that process `add` tasks.
+```
+
+### Task
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.processAll" id="apidoc.element.barbeque.index.prototype.processAll">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>processAll
+        <span class="apidocSignatureSpan">(nestableObject)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">processAll = function (nestableObject) {
+  assert(_.isObject(nestableObject), &#x27;&#x22;nestableObject&#x22; must be an object type.&#x27;);
+
+  var self = this,
+      flattenObject = require(&#x27;./helper&#x27;).flattenDot(nestableObject),
+      n = _.size(flattenObject);
+
+  _.each(_.keys(flattenObject), function (type, i) {
+    var fn = flattenObject[type],
+        skipProcess = (i + 1 &#x3c; n);
+
+    assert(_.isString(type) &#x26;&#x26; !_.isEmpty(type), &#x27;&#x22;type&#x22; must be a non-empty string.&#x27;);
+    assert(_.isFunction(fn), &#x27;&#x22;fn&#x22; must be a function (type: &#x27; + type + &#x27;)&#x27;);
+
+    self._worker.watch(type, fn, skipProcess);
+  });
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## API
+
+```js
+.admin()                   // start admin UI
+.create(type, data)        // create an instance of Task
+.listen()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.<span class="apidocCodeKeywordSpan">processAll</span>(obj)           // obj: {key:type,val:data} and nestable
+.query(query, cb)          // query: string id, array of string ids, or filter object
+.queryDetail(query, cb)    // query: string id, array of string ids, or filter object
+.run(processFn, data, cb)  // immediately run a task
+.update(taskId, task, cb)  // update task
+```
+
+### Task
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.query" id="apidoc.element.barbeque.index.prototype.query">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>query
+        <span class="apidocSignatureSpan">(query, cb, queryDetail)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">query = function (query, cb, queryDetail) {
+  if (_.isFunction(query) &#x26;&#x26; _.isUndefined(cb)) {
+    detail = cb;
+    cb = query;
+    query = void 0;
+  }
+
+  assert(_.isFunction(cb),
+         &#x27;&#x22;cb&#x22; must be a function.&#x27;);
+  assert(_.isBoolean(queryDetail) || _.isUndefined(queryDetail),
+         &#x27;&#x22;queryDetail&#x22; must be a boolean.&#x27;);
+
+  if (_.isEmpty(query)) {
+    // Find all
+    cb(null, [&#x27;TASK1&#x27;, &#x27;TASK2&#x27;, &#x27;TASK3&#x27;]);
+  } else if (_.isArray(query)) {
+    // Find many
+    cb(null, [&#x27;TASK1&#x27;, &#x27;TASK2&#x27;]);
+  } else if (_.isString(query)) {
+    // Find one
+    cb(null, &#x27;TASK&#x27;);
+  } else {
+    cb(new Error(&#x27;Invalid query: &#x27; + JSON.stringify(query)));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```js
+.admin()                   // start admin UI
+.create(type, data)        // create an instance of Task
+.listen()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.processAll(obj)           // obj: {key:type,val:data} and nestable
+.<span class="apidocCodeKeywordSpan">query</span>(query, cb)          // query: string id, array of string ids, or filter object
+.queryDetail(query, cb)    // query: string id, array of string ids, or filter object
+.run(processFn, data, cb)  // immediately run a task
+.update(taskId, task, cb)  // update task
+```
+
+### Task
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.queryDetail" id="apidoc.element.barbeque.index.prototype.queryDetail">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>queryDetail
+        <span class="apidocSignatureSpan">(query, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">queryDetail = function (query, cb) {
+  return this.query(query, cb, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+.admin()                   // start admin UI
+.create(type, data)        // create an instance of Task
+.listen()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.processAll(obj)           // obj: {key:type,val:data} and nestable
+.query(query, cb)          // query: string id, array of string ids, or filter object
+.<span class="apidocCodeKeywordSpan">queryDetail</span>(query, cb)    // query: string id, array of string ids, or filter object
+.run(processFn, data, cb)  // immediately run a task
+.update(taskId, task, cb)  // update task
+```
+
+### Task
+
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.run" id="apidoc.element.barbeque.index.prototype.run">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>run
+        <span class="apidocSignatureSpan">(fn, data, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">run = function (fn, data, cb) {
+  assert(_.isFunction(fn), &#x27;&#x22;fn&#x22; must be a funciton.&#x27;);
+
+  var self = this,
+      currentTime = new Date();
+
+  fn({
+    id: null,
+    type: null,
+    data: data,
+    createdAt: currentTime,
+    updatedAt: currentTime,
+    // extra
+    create: create,
+    log: log,
+    progress: progress
+  }, cb);
+
+  function create() {
+    return self.create.apply(self, arguments);
+  }
+
+  function log() {
+    console.info(&#x27;[LOG] &#x27; + util.format.apply(null, arguments));
+  }
+
+  function progress(completed, total) {
+    console.info(&#x27;[PROGRESS] %s of %s&#x27;, completed, total);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.admin()                   // start admin UI
+.create(type, data)        // create an instance of Task
+.listen()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.processAll(obj)           // obj: {key:type,val:data} and nestable
+.query(query, cb)          // query: string id, array of string ids, or filter object
+.queryDetail(query, cb)    // query: string id, array of string ids, or filter object
+.<span class="apidocCodeKeywordSpan">run</span>(processFn, data, cb)  // immediately run a task
+.update(taskId, task, cb)  // update task
+```
+
+### Task
+
+```js
+.save(optionalCallback)    // enqueue task to the task queue
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.barbeque.index.prototype.update" id="apidoc.element.barbeque.index.prototype.update">
+        function <span class="apidocSignatureSpan">barbeque.index.prototype.</span>update
+        <span class="apidocSignatureSpan">(taskId, task, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function (taskId, task, cb) {
+  cb(null, taskId);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+.create(type, data)        // create an instance of Task
+.listen()                  // listen to redis updates
+.process(type, processfn)  // start a processor of a specific task type
+.processAll(obj)           // obj: {key:type,val:data} and nestable
+.query(query, cb)          // query: string id, array of string ids, or filter object
+.queryDetail(query, cb)    // query: string id, array of string ids, or filter object
+.run(processFn, data, cb)  // immediately run a task
+.<span class="apidocCodeKeywordSpan">update</span>(taskId, task, cb)  // update task
+```
+
+### Task
+
+```js
+.save(optionalCallback)    // enqueue task to the task queue
+.priority(priority)        // specify task priority (lower value: higher priority)
 ...</pre></li>
     </ul>
 
@@ -2780,7 +3367,22 @@ var self = this,
     }
   });
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return this;
+};
+
+Barbeque.prototype.process = function (type, fn) {
+assert(_.isString(type) &#x26;&#x26; !_.isEmpty(type), &#x27;&#x22;type&#x22; must be a non-empty string.&#x27;);
+assert(_.isFunction(fn), &#x27;&#x22;fn&#x22; must be a function.&#x27;);
+
+this._worker.<span class="apidocCodeKeywordSpan">watch</span>(type, fn);
+
+return this;
+};
+
+Barbeque.prototype.processAll = function (nestableObject) {
+assert(_.isObject(nestableObject), &#x27;&#x22;nestableObject&#x22; must be an object type.&#x27;);
+...</pre></li>
     </ul>
 
 
