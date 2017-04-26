@@ -1,6 +1,6 @@
 # npmdoc-barbeque
 
-#### api documentation for  [barbeque (v0.2.4)](https://github.com/pilwon/barbeque)  [![npm package](https://img.shields.io/npm/v/npmdoc-barbeque.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-barbeque) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-barbeque.svg)](https://travis-ci.org/npmdoc/node-npmdoc-barbeque)
+#### basic api documentation for  [barbeque (v0.2.4)](https://github.com/pilwon/barbeque)  [![npm package](https://img.shields.io/npm/v/npmdoc-barbeque.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-barbeque) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-barbeque.svg)](https://travis-ci.org/npmdoc/node-npmdoc-barbeque)
 
 #### Redis-based task queue library for Node.js, inspired by Celery and Kue.
 
